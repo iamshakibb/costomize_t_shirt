@@ -1,0 +1,45 @@
+/* mobile nav toggle style */
+.navbar-toggler {
+  background-color: #fff;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.navbar-collapse {
+  padding: 20px;
+  text-align: center;
+}
+/* mobile nav toggle style */
+
+/* nav logo */
+.navbar-brand {
+  border: 3px solid salmon;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+.navbar-nav a {
+  margin-right: 40px;
+  font-weight: 800;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .navbar-collapse {
+    background: salmon;
+    position: relative;
+    z-index: 999;
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar-collapse {
+    background: salmon;
+    position: relative;
+    z-index: 999;
+    margin-top: 10px;
+  }
+}

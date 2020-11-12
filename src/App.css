@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f0016;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff !important;
+}
+
+.filepond--credits {
+  display: none;
+}
+
+.filepond--item {
+  width: calc(50% - 0.1em);
+}

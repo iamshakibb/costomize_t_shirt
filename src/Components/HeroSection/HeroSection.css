@@ -1,0 +1,8 @@
+.hero_img img {
+  width: 400px;
+}
+
+.hero_text p {
+  width: 85%;
+  font-size: 1.3em;
+}
