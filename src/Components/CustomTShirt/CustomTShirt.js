@@ -1,12 +1,12 @@
-import NavBar from "../NavBar/NavBar";
 import tShirt from "../../resourse/T-shirt.png";
 import "./CustomTShirt.css";
 import { Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
-import { notOpen } from "../../Redux/Action";
+import { open } from "../../Redux/Action";
 import EditForm from "../EditForm/EditForm";
 
 export default function CustomTShirt() {
+  // fetching data from redux is editor form open or not
   const isItOpen = useSelector((state) => state.Editor);
   const dispatch = useDispatch();
   return (
@@ -17,7 +17,7 @@ export default function CustomTShirt() {
         </div>
         {isItOpen ? null : (
           <div className="col-sm-12 d-flex justify-content-end align-items-center text-center">
-            <Button onClick={() => dispatch(notOpen())}>Edit</Button>
+            <Button onClick={() => dispatch(open())}>Edit</Button>
           </div>
         )}
         {isItOpen ? <EditForm /> : null}

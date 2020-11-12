@@ -13,7 +13,9 @@ export default function EditingBox({ output }) {
   };
   return (
     <>
+      {/* this for draggable box/div */}
       <Draggable>
+        {/* this for resizable box/div */}
         <Resizable
           style={style}
           defaultSize={{
@@ -25,7 +27,6 @@ export default function EditingBox({ output }) {
           {output.length === 0 ? "Hi" : output}
         </Resizable>
       </Draggable>
-      {/* <div className="edit">H2</div> */}
     </>
   );
 }

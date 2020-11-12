@@ -1,9 +1,7 @@
 import { FormGroup, Row } from "react-bootstrap";
-import NavBar from "../NavBar/NavBar";
 import React, { useState } from "react";
-import "./UploadImage.css";
 // Import React FilePond
-import { FilePond, File, registerPlugin } from "react-filepond";
+import { FilePond, registerPlugin } from "react-filepond";
 
 // Import FilePond styles
 import "filepond/dist/filepond.min.css";
@@ -16,13 +14,6 @@ registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 export default function UploadImage() {
   const [files, setFiles] = useState([]);
-  const formData = new FormData();
-  if (files.length > 0) {
-    // formData.append("file", files[0].file);
-    // formData.append("title", service.title);
-    // formData.append("description", service.description);
-    console.log(files);
-  }
   return (
     <>
       <Row style={{ height: "90vh" }} className="text-center justify-content-center align-items-center">

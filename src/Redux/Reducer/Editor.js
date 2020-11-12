@@ -1,8 +1,8 @@
 const isEditor = (state = false, action) => {
   switch (action.type) {
-    case "NOTOPEN":
-      return !state;
     case "OPEN":
+      return !state;
+    case "CLOSE":
       return false;
     default:
       return state;

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Button, FormGroup } from "react-bootstrap";
 import EditingBox from "../EditingBox/EditingBox";
-import { open } from "../../Redux/Action";
+import { close } from "../../Redux/Action";
 import { useDispatch } from "react-redux";
 
 const EditForm = () => {
@@ -24,7 +24,7 @@ const EditForm = () => {
             <input ref={input} name="textField" className="form-control" placeholder="Enter text" />
           </FormGroup>
           <FormGroup>
-            <Button className="mr-4" onClick={() => dispatch(open())}>
+            <Button className="mr-4" onClick={() => dispatch(close())}>
               Cancel
             </Button>
             <Button type="submit">Ok</Button>
